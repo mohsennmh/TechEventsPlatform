@@ -1,0 +1,129 @@
+/* General Page Styling */
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #1e1e1e, #2196f3); /* Dark grey to blue gradient */
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff; /* White for text to ensure readability on dark background */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.signup-page h1 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  color: #ffffff; /* Keep text white for visibility */
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Form Styling */
+.signup-page form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  background: #ffffff; /* Pure white for contrast */
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.signup-page input,
+.signup-page select {
+  padding: 14px;
+  margin: 12px 0;
+  font-size: 1.1rem;
+  border: 2px solid #1976d2; /* Blue border */
+  border-radius: 10px;
+  outline: none;
+  background: #f9f9f9; /* Subtle off-white for input background */
+  color: #333; /* Dark text for readability */
+  transition: all 0.3s ease;
+}
+
+.signup-page input:focus,
+.signup-page select:focus {
+  border-color: #0d47a1; /* Dark blue for focus state */
+  box-shadow: 0 0 10px rgba(13, 71, 161, 0.6); /* Subtle blue glow effect */
+}
+
+.signup-page input:hover,
+.signup-page select:hover {
+  background: #f1f1f1; /* Slightly lighter background on hover */
+}
+
+.signup-page button {
+  padding: 16px;
+  margin-top: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #1976d2; /* Blue for primary action button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-page button:hover {
+  background: #0d47a1; /* Darker blue on hover */
+  transform: translateY(-3px); /* Lift effect */
+}
+
+.signup-page button:active {
+  transform: translateY(0); /* Reset lift effect */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Pressed button effect */
+}
+
+/* Error Message Styling */
+.signup-page p {
+  margin-top: 20px;
+  color: #b0c4de; /* Red for error messages */
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Login Button Styling */
+.signup-page .login-button {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1976d2; /* Blue for the link button */
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.signup-page .login-button:hover {
+  color: #0d47a1; /* Darker blue on hover */
+  background-color: #61799c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-page form {
+    width: 100%;
+  }
+
+  .signup-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .signup-page button {
+    font-size: 1.1rem;
+  }
+
+  .signup-page input,
+  .signup-page select {
+    font-size: 1rem;
+  }
+}

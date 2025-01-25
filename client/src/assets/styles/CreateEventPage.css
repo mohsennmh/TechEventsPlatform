@@ -1,0 +1,51 @@
+.create-event {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #010101; /* Black background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #ffffff; /* White text for readability */
+}
+
+.create-event h1 {
+  font-size: 2rem;
+  color: #367acc; /* Blue accent color */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-event form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.create-event input,
+.create-event textarea,
+.create-event select,
+.create-event .location-dropdown{ 
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #367acc; /* Blue border */
+  background-color: #121212; /* Dark background for inputs */
+  color: #ffffff; /* White text inside input */
+}
+
+.create-event button {
+  background-color: #367acc; /* Blue background */
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-event button:hover {
+  background-color: #4a90e2; /* Lighter blue hover effect */
+}
+

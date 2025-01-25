@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .event-card {
+      margin: 10px 0;
+    }
+  
+    .users-table table {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,127 @@
+/* Event card layout */
+.event-card {
+  align-items: center;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  color: white; /* Ensure text remains readable over images */
+  height: auto;
+  width: auto;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Event image */
+.eventcard-image{
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #367acc;
+  background-color: #e0e0e0; /* Fallback color */
+  align-self: auto;
+}
+
+/* Event details */
+.event-details {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1565c0;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.event-date-location {
+  font-size: 0.9rem;
+  color: #8f8c8c;
+  display: flex;
+  gap: 16px; /* Uniform gap */
+  align-items: center;
+}
+
+.event-date-location i {
+  margin-right: 8px;
+  color: #4a90e2; /* Professional accent color */
+}
+
+/* Description */
+.event-description {
+  font-size: 0.95rem;
+  color: #8f8c8c;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3.8em;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 10px;
+}
+
+/* Register button */
+.register-button {
+  align-self: start;
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  align-self: center;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #367acc;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.register-button:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .event-card {
+    flex-direction: column;
+  }
+
+  .event-image {
+    height: auto;
+  }
+
+  .event-title {
+    font-size: 1.3rem;
+  }
+
+  .event-date-location {
+    font-size: 0.85rem;
+  }
+
+  .event-description {
+    font-size: 0.9rem;
+  }
+
+  .register-button {
+    padding: 8px 14px;
+  }
+}

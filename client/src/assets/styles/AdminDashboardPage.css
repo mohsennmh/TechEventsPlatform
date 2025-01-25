@@ -1,0 +1,62 @@
+.admin-dashboard {
+  padding: 20px;
+  background-color: #f8f9fa; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.users-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.users-table th,
+.users-table td {
+  border: none;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.users-table th {
+  background: linear-gradient(135deg, #010101, #1565c0); 
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.users-table td {
+  border-bottom: 1px solid #eee;
+}
+
+.users-table tr:last-child td {
+  border-bottom: none;
+}
+
+.users-table tr:hover {
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
+}
+
+.delete-user {
+  padding: 6px 12px;
+  background: linear-gradient(135deg, #010101, #1565c0); 
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.delete-user:hover {
+  background: linear-gradient(135deg, #1565c0, #010101); 
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

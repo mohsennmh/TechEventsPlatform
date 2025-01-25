@@ -1,0 +1,68 @@
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0a2634;
+  display:flexbox;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Flex layout for app */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ensuring the main content fills available space */
+.main-content {
+  flex-grow: 1; /* Ensures the main content area takes available space */
+  padding: 20px;
+  box-sizing: border-box; /* Prevent overflow issues */
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #0284c7; /* Example button color */
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Button focus for accessibility */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure images or any large content don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* For smaller screens, adjust button sizes */
+@media (max-width: 600px) {
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+}
